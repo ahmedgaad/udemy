@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
-
   var emailController = TextEditingController();
   var passwordController = TextEditingController();
 
@@ -14,16 +13,13 @@ class LoginScreen extends StatelessWidget {
         child: Center(
           child: SingleChildScrollView(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children:
-              [
+              // crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
                 Text(
                   'Login',
                   style: TextStyle(
-                    fontSize:40.0,
+                    fontSize: 40.0,
                     fontWeight: FontWeight.bold,
-
-
                   ),
                 ),
                 SizedBox(
@@ -32,12 +28,10 @@ class LoginScreen extends StatelessWidget {
                 TextFormField(
                   controller: emailController,
                   keyboardType: TextInputType.emailAddress,
-                  onFieldSubmitted: (value)
-                  {
+                  onFieldSubmitted: (value) {
                     print(value);
                   },
-                  onChanged: (value)
-                  {
+                  onChanged: (value) {
                     print(value);
                   },
                   decoration: InputDecoration(
@@ -55,12 +49,10 @@ class LoginScreen extends StatelessWidget {
                   controller: passwordController,
                   keyboardType: TextInputType.visiblePassword,
                   obscureText: true,
-                  onFieldSubmitted: (value)
-                  {
+                  onFieldSubmitted: (value) {
                     print(value);
                   },
-                  onChanged: (value)
-                  {
+                  onChanged: (value) {
                     print(value);
                   },
                   decoration: InputDecoration(
@@ -81,12 +73,10 @@ class LoginScreen extends StatelessWidget {
                   color: Colors.blue,
                   width: double.infinity,
                   child: MaterialButton(
-                      onPressed: ()
-                      {
-                        print(emailController.text);
-                        print(passwordController.text);
-
-                      },
+                    onPressed: () {
+                      print(emailController.text);
+                      print(passwordController.text);
+                    },
                     child: Text(
                       'LOGIN',
                       style: TextStyle(
@@ -101,16 +91,11 @@ class LoginScreen extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children:
-                  [
+                  children: [
                     Text(
                       'Don\'t have an account?',
                     ),
-                    TextButton(
-                        onPressed: (){},
-                        child: Text(
-                          'Register Now'
-                        )),
+                    TextButton(onPressed: () {}, child: Text('Register Now')),
                   ],
                 ),
               ],
