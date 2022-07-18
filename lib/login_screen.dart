@@ -5,7 +5,8 @@ class LoginScreen extends StatelessWidget {
   var passwordController = TextEditingController();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  {
     return Scaffold(
       appBar: AppBar(),
       body: Padding(
