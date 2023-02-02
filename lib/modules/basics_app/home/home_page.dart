@@ -9,21 +9,21 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
         elevation: 25.0,
-        leading: Icon(
+        leading: const Icon(
           Icons.account_balance,
         ),
-        title: Text('First App'),
+        title: const Text('First App'),
         centerTitle: true,
         actions: [
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.ac_unit,
             ),
             onPressed: () {
               print('hello');
             },
           ),
-          Icon(
+          const Icon(
             Icons.accessibility,
           ),
         ],
@@ -41,7 +41,7 @@ class Home extends StatelessWidget {
               child: Stack(
                 alignment: Alignment.bottomCenter,
                 children: [
-                  Image(
+                  const Image(
                     image: NetworkImage('https://images.unsplash.com/photo-1597858520171-563a8e8b9925?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1854&q=80'),
                     width: 200.0,
                     height: 150.0,
@@ -50,11 +50,11 @@ class Home extends StatelessWidget {
                   Container(
                     color: Colors.black.withOpacity(0.8),
                     width: 200.0,
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       vertical: 5.0,
                     ),
 
-                    child: Text(
+                    child: const Text(
                         'Car',
                       textAlign: TextAlign.center,
                       style: TextStyle(
